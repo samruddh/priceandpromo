@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavbarAndSideBar } from './components/templates/NavbarAndSideBar';
+
 import {
   BrowserRouter,
   Routes,
@@ -9,11 +11,14 @@ import Home from "./Home";
 
 function App() {
   return (
+    <>
+    <NavbarAndSideBar/>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
+        <Route path='/'></Route>
       </Routes>
     </BrowserRouter>
+    </>
   );
 }
 
